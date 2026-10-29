@@ -1,0 +1,14 @@
+{
+  "kind": "XeLL diagnostic only",
+  "youtube_browser": false,
+  "youtube_playback": false,
+  "hardware_tested": false,
+  "format": "ELF32 big-endian PowerPC static",
+  "entry": "0x3c00",
+  "compiler": "Xenon GCC 16.2.0",
+  "xenonfin_commit": "554adb8d79a251e4b502ac4a87a328cbe5055b09",
+  "sha256": "75b2346dc0fedde441eb59c4ef6dda240a97560850570ee0461939f1df122b40",
+  "bytes": 280688,
+  "host_tests": "passed",
+  "unresolved_symbols": []
+}

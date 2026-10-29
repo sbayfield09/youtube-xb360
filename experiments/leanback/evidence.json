@@ -1,0 +1,111 @@
+{
+  "recorded_utc": "2026-10-29T22:52:14.430718+00:00",
+  "scope": "Linux host only; no console execution or XEX build",
+  "xenonfin_commit": "554adb8d79a251e4b502ac4a87a328cbe5055b09",
+  "vacuumtube_commit": "21ed770379deefc123c1026774b7d8fc1bc0d84b",
+  "h5vcc_commit": "7da685fe633dac18fd8db35624f7bade8619c977",
+  "native_gate": {
+    "exit": 2,
+    "stage": "endpoint parsing before DNS/TCP/TLS",
+    "message": "HTTPS unavailable on this native build; no insecure TLS fallback"
+  },
+  "controller_test": {
+    "passed": true,
+    "cases": [
+      "press",
+      "held suppression",
+      "release/direction change",
+      "disconnect release"
+    ]
+  },
+  "http_tv": {
+    "utc": "2026-10-29T22:51:36.512443+00:00",
+    "platform": "host-only",
+    "profile": "tv",
+    "page": {
+      "curl_exit": 56,
+      "http_status": 0,
+      "proxy_connect_status": 403,
+      "tls_established": false,
+      "tls_verify_result": 0,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "complete": false,
+      "final_origin": "https://www.youtube.com",
+      "content_type": null,
+      "redirects": 0
+    },
+    "resources": [],
+    "rendering_tested": false,
+    "playback_tested": false,
+    "scope": "At most 16 static script/stylesheet references, not dynamic JS requests"
+  },
+  "http_desktop": {
+    "utc": "2026-10-29T22:51:33.924535+00:00",
+    "platform": "host-only",
+    "profile": "desktop",
+    "page": {
+      "curl_exit": 56,
+      "http_status": 0,
+      "proxy_connect_status": 403,
+      "tls_established": false,
+      "tls_verify_result": 0,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "complete": false,
+      "final_origin": "https://www.youtube.com",
+      "content_type": null,
+      "redirects": 0
+    },
+    "resources": [],
+    "rendering_tested": false,
+    "playback_tested": false,
+    "scope": "At most 16 static script/stylesheet references, not dynamic JS requests"
+  },
+  "browser_tv": {
+    "product": "Chrome/154.0.8037.57",
+    "navigation_error": "net::ERR_TUNNEL_CONNECTION_FAILED",
+    "feature_context": "browser-error-document",
+    "network_failures": [
+      {
+        "type": "Document",
+        "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+      },
+      {
+        "type": "Document",
+        "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+      },
+      {
+        "type": "Document",
+        "error": "net::ERR_ABORTED"
+      },
+      {
+        "type": "Document",
+        "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+      },
+      {
+        "type": "Document",
+        "error": "net::ERR_ABORTED"
+      }
+    ],
+    "leanback_exceptions_observed": false,
+    "leanback_loaded": false
+  },
+  "browser_fixture": {
+    "instrumentation_passed": true,
+    "expected_exception_captured": true
+  },
+  "rendering_verified": false,
+  "playback_verified": false,
+  "xex_built": false,
+  "tool_presence": {
+    "cl": false,
+    "xenon-gcc": false,
+    "imagexex": false,
+    "xexbuild": false
+  },
+  "xdk_environment_names_present": {
+    "XEDK": false,
+    "XDK": false
+  }
+}
