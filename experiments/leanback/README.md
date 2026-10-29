@@ -1,5 +1,9 @@
 # Xbox 360 Leanback experiment
 
+**Current version 0.2:** [native HTTPS diagnostic and required USB preparation](net/README.md).
+It now attempts DHCP/DNS/TLS/GET directly. The original parser-only native gate
+and initial feasibility findings below remain available as historical evidence.
+
 **ELF follow-up:** a standalone XeLL diagnostic is now built. See
 [ELF instructions](elf/README.md). The XEX/browser/playback limitations below
 remain; the ELF is a status/controller/transport-gate diagnostic only.

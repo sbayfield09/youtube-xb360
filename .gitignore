@@ -1,3 +1,5 @@
 experiments/leanback/build/
 experiments/leanback/artifacts/
 __pycache__/
+leanback-seed.bin
+leanback-page.html

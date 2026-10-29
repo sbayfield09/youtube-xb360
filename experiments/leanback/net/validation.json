@@ -1,0 +1,95 @@
+{
+  "scope": "Host adapters; actual probe/TLS/parser; no console validation",
+  "tests": [
+    {
+      "case": "valid",
+      "passed": true,
+      "stage": "HTTPS complete",
+      "verified": "1",
+      "flags": "0",
+      "status": "200",
+      "complete": "1",
+      "body": "5",
+      "detail": "Verified HTTPS; complete page saved as leanback-page.html"
+    },
+    {
+      "case": "wrong-host",
+      "passed": true,
+      "stage": "TLS failed",
+      "verified": "0",
+      "flags": "4",
+      "status": "0",
+      "complete": "0",
+      "body": "0",
+      "detail": "X509 - Certificate verification failed, e.g. CRL, CA or signature check failed"
+    },
+    {
+      "case": "untrusted",
+      "passed": true,
+      "stage": "TLS failed",
+      "verified": "0",
+      "flags": "8",
+      "status": "0",
+      "complete": "0",
+      "body": "0",
+      "detail": "X509 - Certificate verification failed, e.g. CRL, CA or signature check failed"
+    },
+    {
+      "case": "expired",
+      "passed": true,
+      "stage": "TLS failed",
+      "verified": "0",
+      "flags": "1",
+      "status": "0",
+      "complete": "0",
+      "body": "0",
+      "detail": "X509 - Certificate verification failed, e.g. CRL, CA or signature check failed"
+    },
+    {
+      "case": "truncated",
+      "passed": true,
+      "stage": "HTTP parser failed",
+      "verified": "1",
+      "flags": "0",
+      "status": "200",
+      "complete": "0",
+      "body": "5",
+      "detail": "Connection closed before HTTP response completed"
+    },
+    {
+      "case": "redirect",
+      "passed": true,
+      "stage": "HTTPS complete",
+      "verified": "1",
+      "flags": "0",
+      "status": "302",
+      "complete": "1",
+      "body": "0",
+      "detail": "HTTP 302; no redirect following or browser execution"
+    },
+    {
+      "case": "seed-write-failure",
+      "passed": true,
+      "stage": "Entropy failed",
+      "verified": "0",
+      "flags": "0",
+      "status": "0",
+      "complete": "0",
+      "body": "0",
+      "detail": "NV seed read/update/flush verification failed; TLS refused"
+    },
+    {
+      "case": "missing-seed",
+      "passed": true,
+      "stage": "Entropy failed",
+      "verified": "0",
+      "flags": "0",
+      "status": "0",
+      "complete": "0",
+      "body": "0",
+      "detail": "NV seed read/update/flush verification failed; TLS refused"
+    }
+  ],
+  "dns_malformed_packets": 20000,
+  "platform_logic_test": "passed; FAT/SMC mocked"
+}

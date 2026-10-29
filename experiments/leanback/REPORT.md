@@ -1,5 +1,13 @@
 # Feasibility report — 2026-10-29
 
+**0.2 networking follow-up:** a separate native DHCP/DNS/Mbed TLS HTTPS path is
+implemented and cross-built, with required certificate/hostname/date verification
+and a private USB-backed NV seed. Host positive/negative TLS fixtures pass. The
+user confirmed 0.1's display and controller page on hardware; the new network/USB
+path has not been physically verified. See [current details](net/README.md).
+The initial parser rejection below describes unchanged XenonFin, not the new
+separate HTTPS implementation. Browser rendering and playback remain unresolved.
+
 **Later ELF build:** at the user's request, a separate XeLL diagnostic was
 cross-compiled with checksum-verified Xenon GCC 16.2.0. It reuses the unchanged
 XenonFin text presenter and endpoint parser. ELF32/big-endian/PowerPC format,

@@ -1,5 +1,11 @@
 # XeLL ELF diagnostic 0.1
 
+**Superseded by 0.2:** current downloads include direct DHCP/DNS/verified-HTTPS
+testing. Follow [the 0.2 USB setup and test procedure](../net/README.md).
+The instructions below describe the preserved 0.1 rollback binary; its boot and
+page-3 controller behavior have since been reported working on the console.
+For rebuilding 0.2, fetch Mbed TLS using `net/fetch_tls.py` before `make -f elf.mk`.
+
 This build was requested as an interim ELF rather than an XEX. It is a separate
 application: **no YouTube UI, HTTPS request, audio or video playback is implemented**.
 It shows three diagnostic pages using XenonFin's existing text compositor.
